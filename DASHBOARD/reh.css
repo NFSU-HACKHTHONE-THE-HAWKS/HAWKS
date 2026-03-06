@@ -1,0 +1,194 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #050816, #0a0f2c);
+    color: white;
+    display: flex;
+}
+
+/* ================= MAIN ================= */
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* ================= HERO ================= */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.hero-left,
+.hero-right {
+    width: 22%;
+    margin-top: 140px;
+}
+
+.hero-center {
+    width: 50%;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 48px;
+    color: cyan;
+}
+
+.subtitle {
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.welcome-text {
+    margin: 10px 0 20px;
+    color: #00ffff;
+}
+
+/* ================= MINI CARDS ================= */
+
+.mini-card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mini-card h3 {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 8px;
+}
+
+.mini-card p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.status-stable {
+    color: #22c55e;
+}
+
+/* ================= RISK CIRCLE ================= */
+
+.risk-wrapper {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 30px auto;
+}
+
+.progress-ring-fill {
+    transition: stroke-dashoffset 0.8s ease;
+}
+
+.risk-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.risk-text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.risk-event {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+/* ================= LOWER SECTION ================= */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.row .card {
+    flex: 1;
+}
+
+.card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline-card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.timeline-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, cyan, transparent);
+    margin-bottom: 20px;
+}
+
+.timeline-card ol {
+    padding-left: 20px;
+}
+
+.timeline-card li {
+    margin-bottom: 8px;
+    opacity: 0.85;
+}
+
+/* ================= FOOTER ================= */
+
+.footer-divider {
+    margin: 40px 0 20px;
+    border: none;
+    height: 1px;
+    background: #1e293b;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;   /* vertical stack */
+    align-items: flex-start;  /* sab left align */
+    gap: 10px;
+}
+.footer-contact {
+    text-align: left;
+}
+
+.footer-tagline {
+    text-align: left;
+}
+/* ===== ALERT BLINK EFFECT ===== */
+
+.alert-active {
+    animation: blinkAlert 0.7s infinite;
+    border-left: 6px solid #ff0000;
+}
+
+@keyframes blinkAlert {
+    0% { background-color: #111827; }
+    50% { background-color: #ff0000; }
+    100% { background-color: #111827; }
+}

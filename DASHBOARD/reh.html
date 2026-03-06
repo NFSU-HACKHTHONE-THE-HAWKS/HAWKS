@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DAFDN Dashboard</title>
+<link rel="stylesheet" href="reh.css">
+</head>
+
+<body>
+
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+
+    <div class="hero-section">
+        
+        <div class="hero-left">
+                    <div class="mini-card">
+                    <h3>Active Agents</h3>
+                    <p id="active-agents-val">0</p> </div>
+                <div class="mini-card">
+                    <h3>Critical Threats</h3>
+                    <p id="critical-threats-val">0</p> </div>
+        </div>
+
+        <div class="hero-center">
+            <h1 class="main-title">DAFDN</h1>
+            <p class="subtitle">Distributed Anti-Forensics Detection Network</p>
+            <p class="welcome-text" id="welcomeText"></p>
+
+            <div class="risk-wrapper">
+                <svg width="220" height="220">
+                    <circle stroke="#1e293b" stroke-width="15"
+                        fill="transparent" r="90" cx="110" cy="110"/>
+                    <circle class="progress-ring-fill"
+                        stroke-width="15"
+                        fill="transparent" r="90"
+                        cx="110" cy="110"
+                        stroke-linecap="round"
+                        transform="rotate(-90 110 110)"/>
+                </svg>
+
+                <div class="risk-info">
+                    <h2 class="risk-text"></h2>
+                    <p class="risk-event"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="mini-card">
+                <h3>Last Activity</h3>
+                <p>2 mins ago</p>
+            </div>
+            <div class="mini-card">
+                <h3>System Health</h3>
+                <p class="status-stable">Stable</p>
+            </div>
+        </div>
+
+    </div>
+   
+
+    <!-- LOWER SECTION -->
+    <div class="container">
+
+        <div class="row">
+            <div class="card">
+                <h2>Agent Status</h2>
+                <p id="agent-status">Offline</p>
+            </div>
+
+            <div class="card" id="liveAlertCard">
+                <h2>Live Alerts</h2>
+                 <p id="liveAlertMessage"></p>
+                    </div>
+            <button onclick="downloadReport()" style="margin-top:10px; background:cyan; color:black; padding:8px; border-radius:5px; cursor:pointer; font-weight:bold;">
+                📥 Download Forensic Report (CSV)
+            </button>
+        </div>
+
+        <div class="card timeline-card">
+            <h2>Event Timeline</h2>
+            <hr class="timeline-divider">
+            <ol>
+                <li>-----</li>
+                
+            </ol>
+        </div>
+
+    </div>
+
+    <hr class="footer-divider">
+
+</div>
+
+<script src="reh.js"></script>
+</body>
+</html>
