@@ -13,7 +13,7 @@ from process_verifier import ProcessVerifier
 
 # --- UPDATED CONFIGURATION ---
 # Base URL for the server
-BASE_URL = "http://10.116.33.19:8000" 
+BASE_URL = "http://Your IP Address Here:8000" 
 # Generate a unique ID for this agent (or use socket.gethostname())
 AGENT_ID = f"PC-{uuid.uuid4().hex[:6].upper()}"
 HEARTBEAT_INTERVAL = 30 

@@ -4,7 +4,7 @@ import requests
 from ntfs_analyzer import NTFSAnalyzer
 
 # --- CONFIGURATION ---
-MAC_IP = "10.116.33.19" 
+MAC_IP = "Your IP Address Here" 
 SERVER_URL = f"http://{MAC_IP}:8000/alerts"
 TARGET_FILE = "C:\\DAFDN_Demo\\rehant.txt" 
 

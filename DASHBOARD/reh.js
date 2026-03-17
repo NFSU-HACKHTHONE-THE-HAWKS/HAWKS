@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     async function updateDashboard() {
         try {
             // NOTE: Demo ke waqt IP Mac ke real IP se replace karna
-            const response = await fetch('http://10.116.33.19:8000/dashboard-stats');
+            const response = await fetch('http://Your IP Address Here:8000/dashboard-stats');
             const data = await response.json();
 
             // 1. Update Stats
